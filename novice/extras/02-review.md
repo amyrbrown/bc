@@ -3,6 +3,12 @@ layout: lesson
 root: ../..
 title: Code Review
 ---
+
+<!-- 
+  FIXME - there are relative references in this chapter which don't make
+  sense: "in the previous section", "a few moments ago" 
+-->
+
 The model shown in the previous section,
 in which everyone pushes and pulls from a single repository,
 is perfectly usable,
@@ -49,7 +55,7 @@ i.e., clones it on GitHub. He does this using the GitHub web interface:
 
 <img src="img/git-fork-ui.png" alt="The Fork Button" />
 
-He then clones his GitHub repository, not Dracula's, to give himself a desktop copy:
+He then clones his own GitHub repository, not Dracula's, to give himself a desktop copy:
 
 <img src="img/git-forking-01.svg" alt="After Forking on GitHub" />
 

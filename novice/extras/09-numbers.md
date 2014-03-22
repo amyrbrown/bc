@@ -192,7 +192,8 @@ we've only printed things out to 18 decimal places.
 As for the errors in the last few digits of the sums,
 there doesn't appear to be any regular pattern in the way they increase and decrease.
 
-This phenomenon is one of the things that makes testing scientific programs hard.
+This phenomenon is one of the things that makes testing scientific 
+programs hard.
 If a function uses floating point numbers,
 what do we compare its result to
 if we want to check that it's working correctly?
@@ -212,7 +213,7 @@ For example,
 if you're looking at the behavior of drops of liquid helium,
 start by checking your program's output on a stationary spherical drop in zero gravity.
 You should be able to calculate the right answer in that case,
-and if your program doesn't work for it,
+and if your program doesn't work for that,
 it probably won't work for anything else.
 
 The second rule is to compare more complex versions of your code to simpler ones.

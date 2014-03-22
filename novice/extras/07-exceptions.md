@@ -189,7 +189,7 @@ instead of `try` and `except`
 sends different signals to anyone reading our code,
 even if they do the same thing.
 
-Novices often ask another question about exception handling style as well,
+Novices often ask another question about exception handling style,
 but before we address it,
 there's something in our example that you might not have noticed.
 Exceptions can actually be thrown a long way:

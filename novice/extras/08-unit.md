@@ -115,7 +115,7 @@ AssertionError
 `ears.run` looks in the calling program
 for functions whose names start with the letters `'test_'`
 and runs each one.
-If the function complete without an assertion being triggered,
+If the function completes without an assertion being triggered,
 we count the test as a [success](../gloss.html#test-success).
 If an assertion fails,
 we count the test as a [failure](../gloss.html#test-failure),

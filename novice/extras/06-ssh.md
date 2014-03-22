@@ -3,7 +3,8 @@ layout: lesson
 root: ../..
 title: Working Remotely
 ---
-Let's take a closer look at what happens when we use a desktop or laptop computer.
+Let's take a closer look at what happens when we use 
+the shell on a desktop or laptop computer.
 The first step is to log in
 so that the operating system knows who we are and what we're allowed to do.
 We do this by typing our username and password;
@@ -26,11 +27,12 @@ We call this a [remote login](../gloss.html#remote-login),
 and the other computer a remote computer.
 Once we do this,
 everything we type is passed to a shell running on the remote computer.
-That shell interacts runs those commands on our behalf,
+That shell runs those commands on our behalf,
 just as a local shell would,
 then sends back output for our computer to display.
 
-The tool we use to log in remotely is the [secure shell)(../gloss.html#secure-shell),
+The tool we use to log in remotely is the 
+[secure shell](../gloss.html#secure-shell),
 or SSH.
 In particular, the command `ssh username@computer`
 runs SSH and connects to the remote computer we have specified.
@@ -38,8 +40,9 @@ After we log in,
 we can use the remote shell to use the remote computer's files and directories.
 Typing `exit` or Control-D
 terminates the remote shell and returns us to our previous shell.
-In the example below, we use highlighting to show our interaction with the remote shell.
-We can also see that the remote machine's command prompt is `moon>`
+
+In the example below
+we can see that the remote machine's command prompt is `moon>`
 instead of just `$`:
 
 ~~~
@@ -58,7 +61,8 @@ $ pwd
 /users/vlad
 ~~~
 
-The secure shell is called "secure" to contrast it with an older program called `rsh`,
+The secure shell is called "secure" to contrast it 
+with an older program called `rsh`,
 which stood for "remote shell".
 Back in the day,
 when everyone trusted each other and knew every chip in their computer by its first name,
@@ -75,7 +79,7 @@ going back and forth between different computers.
 `ssh` has a companion program called `scp`,
 which stands for "secure copy".
 It allows us to copy files to or from a remote computer using the same kind of connection as SSH.
-The syntax is a simple mix of `cp`'s and `ssh`'s.
+(The command's name is a combination of `ssh` and `cp`.)
 To copy a file,
 we specify the source and destination paths,
 either of which may include computer names.
@@ -119,7 +123,8 @@ results-2011-09-18.dat  results-2011-10-28.dat
 results-2011-10-04.dat  results-2011-11-11.dat
 ~~~
 
-SSH has taken the arguments after our username and the name of the computer we want to run on
+SSH has taken the arguments after our username 
+and the name of the computer we want to run on
 and passed them to the shell on the remote computer.
 Since those arguments are a legal command,
 the remote shell has run `ls results` for us

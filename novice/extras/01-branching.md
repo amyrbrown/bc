@@ -5,7 +5,7 @@ title: Branching in Git
 ---
 Here's where we are right now:
 
-~~~
+```
 $ git log
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
 Author: Vlad Dracula <vlad@tran.sylvan.ia>
@@ -29,7 +29,7 @@ $ cat mars.txt
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
-~~~
+```
 
 We can draw the history of the repository like this
 (we'll see in a second why there's a box called `master`):
@@ -43,7 +43,7 @@ $ git branch moons
 ~~~
 
 It appears to do nothing,
-but behind the scenes,
+but behind the scenes
 it has created a new [branch](../gloss.html#branch) called `moons`:
 
 ~~~
@@ -82,8 +82,7 @@ The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 ~~~
 
-because it *is* the same:
-Git hasn't made a copy of it yet because it hasn't needed to.
+because it *is* the same.
 Let's add another line to it:
 
 ~~~
@@ -119,21 +118,19 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Let's add and commit those changes
 (the `-A` flag to `git commit` means "add everything"):
 
-~~~
-$ git add -A
-$ git status
-# On branch moons
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#    modified:   mars.txt
-#    new file:   moons.txt
-#
-$ git commit -m "Thinking about the moons"
-[moons 62e7791] Thinking about the moons
- 2 files changed, 2 insertions(+)
- create mode 100644 moons.txt
-~~~
+    $ git add -A
+    $ git status
+    # On branch moons
+    # Changes to be committed:
+    #   (use "git reset HEAD <file>..." to unstage)
+    #
+    #    modified:   mars.txt
+    #    new file:   moons.txt
+    #
+    $ git commit -m "Thinking about the moons"
+    [moons 62e7791] Thinking about the moons
+     2 files changed, 2 insertions(+)
+     create mode 100644 moons.txt
 
 Our repository is now in the state shown below:
 
@@ -240,23 +237,23 @@ and our repository looks like this:
 
 <img src="img/git-branching-06.svg" alt="After Merging" />
 
-We can visualize the history with this set of arguments to `git log`:
+We can ask Git to draw a rough diagram of 
+the history with this command:
 
-~~~
-$ git log --oneline --topo-order --graph
-*   e0cf8ab Merge branch 'moons'
-|\
-| * 62e7791 Thinking about the moons
-* | dfcf908 We will need a cool name for our secret base
-|/
-* 005937f Thoughts about the climate
-* 34961b1 Concerns about Mars's moons on my furry friend
-* f22b25e Starting to think about Mars
-~~~
+    $ git log --oneline --topo-order --graph
+    *   e0cf8ab Merge branch 'moons'
+    |\
+    | * 62e7791 Thinking about the moons
+    * | dfcf908 We will need a cool name for our secret base
+    |/
+    * 005937f Thoughts about the climate
+    * 34961b1 Concerns about Mars's moons on my furry friend
+    * f22b25e Starting to think about Mars
 
-This ASCII art is fine for small sets of changes,
+This crude visualization is fine for small sets of changes,
 but for anything significant,
-it's much better to use a proper GUI that can draw graphs using lines instead of characters.
+it's much better to use a GUI git tool 
+that can draw graphs using lines instead of characters.
 
 Branching strikes most newcomers as unnecessary complexity,
 particularly for single-author projects.
@@ -282,7 +279,7 @@ then resume our earlier work.
 In practice,
 most developers never make changes directly in the `master` branch.
 Instead,
-they create a new branch from it for every significant change they want to make,
+they create a new branch from it for every change they want to make,
 then merge those branches back to `master` when the work is complete.
 Returning to our hypothetical example,
 we would:
