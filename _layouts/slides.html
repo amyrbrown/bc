@@ -11,12 +11,12 @@ cdn: http://files.software-carpentry.org/cdn
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="{{page.cdn}}/reveal.js/css/reveal.min.css" />
-    <link rel="stylesheet" href="{{page.cdn}}/reveal.js/css/theme/default.css" id="theme" />
+    <link rel="stylesheet" href="{{page.root}}/reveal.js/css/reveal.min.css" />
+    <link rel="stylesheet" href="{{page.root}}/reveal.js/css/theme/default.css" id="theme" />
     <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="{{page.cdn}}/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="{{page.root}}/css/bootstrap/bootstrap.css" />
   </head>
   <body>
 
@@ -26,8 +26,8 @@ cdn: http://files.software-carpentry.org/cdn
       </div>
     </div>
 
-    <script src="{{page.cdn}}/reveal.js/lib/js/head.min.js"></script>
-    <script src="{{page.cdn}}/reveal.js/js/reveal.min.js"></script>
+    <script src="{{page.root}}/reveal.js/lib/js/head.min.js"></script>
+    <script src="{{page.root}}/reveal.js/js/reveal.min.js"></script>
 
     <script>
       // Full list of configuration options available at http://github.com/hakimel/reveal.js#configuration.
@@ -46,12 +46,12 @@ cdn: http://files.software-carpentry.org/cdn
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
-          { src: '{{page.cdn}}/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '{{page.cdn}}/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{page.cdn}}/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{page.cdn}}/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '{{page.cdn}}/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: '{{page.cdn}}/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: '{{page.root}}/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '{{page.root}}/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{page.root}}/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{page.root}}/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{page.root}}/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '{{page.root}}/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
     </script>
