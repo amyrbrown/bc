@@ -37,6 +37,7 @@ all : commands
 EXTRAS = \
 	$(wildcard css/*.css) \
 	$(wildcard css/*/*.css) \
+	$(wildcard reveal.js/css/theme/*.css) \
 	$(wildcard novice/*/img/*.png) \
 	$(wildcard novice/*/img/*.svg)
 
