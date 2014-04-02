@@ -90,11 +90,11 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #2b3990; }
+  border-right-color: #b3b6d5; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #2b3990; }
+  border-left-color: #b3b6d5; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
