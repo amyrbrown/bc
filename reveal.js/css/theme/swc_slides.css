@@ -3,7 +3,8 @@
  *
  * Sky theme Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
 .reveal a:not(.image) {
   line-height: 1.3em; }
 
@@ -14,7 +15,7 @@ body {
   background-color: white; }
 
 .reveal {
-  font-family: "Montserrat", "Helvetica", "Arial", "Open Sans", sans-serif;
+  font-family: "Monserrat", "Helvetica", "Arial", sans-serif;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -36,14 +37,14 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222222;
-  font-family: "Montserrat", "Helvetica", "Arial", "Open Sans", sans-serif;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   line-height: 0.9em;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+   }
 
 /*********************************************
  * LINKS
