@@ -20,12 +20,11 @@
 # that matches are ordered when necessary.
 #======================================================================
 
+include vars.mk
+
 #----------------------------------------------------------------------
 # Settings.
 #----------------------------------------------------------------------
-
-# Output directory for local build.
-SITE = _site
 
 # Installation directory on server.
 INSTALL = $(HOME)/sites/software-carpentry.org/v5
@@ -124,7 +123,7 @@ check :
 
 ## clean    : clean up all generated files.
 clean : tidy
-	rm -rf $(SITE)
+	rm -rf $(SITE) $(BOOK_MD)
 
 ## ---------------------------------------
 
@@ -170,5 +169,15 @@ tidy :
 #  This uses an auxiliary Makefile 'ipynb.mk'.
 ipynb :
 	make -f ipynb.mk
+
+## html     : create HTML version of notes.
+#  This uses an auxiliary Makefile 'book.mk'.
+html :
+	make -f book.mk html
+
+## pdf      : create PDF version of notes.
+#  This uses an auxiliary Makefile 'book.mk'.
+pdf :
+	make -f book.mk pdf
 
 ## ---------------------------------------
